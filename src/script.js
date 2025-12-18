@@ -1,13 +1,14 @@
-  const sidebar = document.getElementById('sidebar');
-  const overlay = document.getElementById('sidebar-overlay');
-  const toggleBtn = document.getElementById('sidebar-toggle');
+const toggle = document.getElementById('sidebar-toggle');
+const sidebar = document.getElementById('sidebar');
 
-  toggleBtn.addEventListener('click', () => {
-    sidebar.classList.toggle('-translate-x-full');
-    overlay.classList.toggle('hidden');
-  });
+toggle.addEventListener('click', () => {
+  sidebar.classList.toggle('-translate-x-full');
+  toggle.classList.toggle('hidden');
+});
 
-  overlay.addEventListener('click', () => {
+sidebar.addEventListener('click', () => {
+  if (window.innerWidth < 1024) {
     sidebar.classList.add('-translate-x-full');
-    overlay.classList.add('hidden');
-  });
+    toggle.classList.remove('hidden');
+  }
+});
