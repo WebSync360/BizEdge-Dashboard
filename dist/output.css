@@ -654,6 +654,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
 .flex {
   display: flex;
 }
@@ -750,6 +754,10 @@ video {
   height: 12rem;
 }
 
+.h-5 {
+  height: 1.25rem;
+}
+
 .max-h-64 {
   max-height: 16rem;
 }
@@ -824,6 +832,10 @@ video {
 
 .w-\[67\%\] {
   width: 67%;
+}
+
+.w-5 {
+  width: 1.25rem;
 }
 
 .flex-1 {
