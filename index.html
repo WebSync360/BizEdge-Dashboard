@@ -40,10 +40,261 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 </head>
 
-<body>
+<body class="bg-gray-50 text-gray-900 antialiased">
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+      <aside class="w-64 bg-white border-r border-gray-200 flex flex-col">
+    <!-- Logo -->
+    <div class="h-18 flex items-center px-6 border-b border-gray-100">
+      <span class="text-lg font-semibold tracking-tight">CoachFlow</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="flex-1 px-4 py-6 space-y-1">
+      <a href="#" class="flex items-center px-4 py-2 text-sm font-medium rounded-lg bg-indigo-50 text-indigo-600">
+        Overview
+      </a>
+      <a href="#" class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100">
+        Leads
+      </a>
+      <a href="#" class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100">
+        Conversions
+      </a>
+      <a href="#" class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100">
+        Messages
+      </a>
+      <a href="#" class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100">
+        Revenue
+      </a>
+      <a href="#" class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100">
+        Clients
+      </a>
+      <a href="#" class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100">
+        Analytics
+      </a>
+    </nav>
+
+    <!-- User -->
+    <div class="px-6 py-4 border-t border-gray-100">
+      <div class="flex items-center gap-3">
+        <div class="h-9 w-9 rounded-full bg-gray-200"></div>
+        <div>
+          <p class="text-sm font-medium">Alex Morgan</p>
+          <p class="text-xs text-gray-500">Business Coach</p>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+    <!-- Main content -->
+    <div class="flex-1 flex flex-col">
+      <!-- Topbar -->
+      <header class="h-18 bg-white border-b border-gray-200 flex items-center justify-between px-8">
+      <!-- Left -->
+      <div>
+        <h1 class="text-xl font-semibold tracking-tight">Dashboard Overview</h1>
+        <p class="text-sm text-gray-500">Business performance snapshot</p>
+      </div>
+
+      <!-- Right -->
+      <div class="flex items-center gap-4">
+        <!-- Date filter -->
+        <div class="flex items-center gap-2 px-3 py-2 border border-gray-200 rounded-lg text-sm text-gray-600">
+          Last 30 days
+        </div>
+
+        <!-- Primary action -->
+        <button class="px-4 py-2 rounded-lg bg-indigo-600 text-white text-sm font-medium hover:bg-indigo-700 transition">
+          Add Lead
+        </button>
+      </div>
+    </header>
+
+
+    <!-- Page content -->
+    <main class="flex-1 p-8 space-y-8">
+
+      <!-- KPI SECTION -->
+      <section>
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4">
+          
+          <!-- KPI: Total Leads -->
+          <div class="relative overflow-hidden rounded-xl bg-white p-6 shadow-sm border border-gray-100">
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-brand-500 to-brand-600"></div>
+
+            <div class="flex items-start justify-between">
+              <div>
+                <p class="text-sm font-medium text-text-secondary">Total Leads</p>
+                <h3 class="mt-2 text-3xl font-semibold text-text-primary tracking-tight">
+                  1,248
+                </h3>
+
+                <div class="mt-3 flex items-center gap-2 text-sm">
+                  <span class="text-emerald-600 font-medium">▲ 12.4%</span>
+                  <span class="text-text-muted">vs last period</span>
+                </div>
+              </div>
+
+              <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-brand-50 text-brand-600">
+                <svg class="h-6 w-6"></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- KPI: Conversion Rate (highlighted) -->
+          <div class="relative overflow-hidden rounded-xl bg-brand-50 p-6">
+            <div class="flex items-start justify-between">
+              <div>
+                <p class="text-sm font-medium text-brand-700">Conversion Rate</p>
+                <h3 class="mt-2 text-3xl font-semibold text-brand-700 tracking-tight">
+                  18.6%
+                </h3>
+                <p class="mt-3 text-sm text-brand-600">+2.1% improvement</p>
+              </div>
+
+              <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white text-brand-600 shadow-sm">
+                <svg class="h-6 w-6"></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- KPI: Revenue -->
+          <div class="relative overflow-hidden rounded-xl bg-white p-6 border border-gray-100">
+            <div class="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-emerald-50 to-transparent"></div>
+
+            <div class="relative">
+              <p class="text-sm font-medium text-text-secondary">Revenue</p>
+              <h3 class="mt-2 text-3xl font-semibold text-text-primary tracking-tight">
+                $42,750
+              </h3>
+
+              <div class="mt-3 flex items-center gap-2 text-sm">
+                <span class="text-emerald-600 font-medium">+$6,320</span>
+                <span class="text-text-muted">this month</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- KPI: Active Clients -->
+          <div class="relative overflow-hidden rounded-xl bg-white p-6 border border-gray-100">
+            <p class="text-sm font-medium text-text-secondary">Active Clients</p>
+            <h3 class="mt-2 text-3xl font-semibold text-text-primary tracking-tight">
+              36
+            </h3>
+            <p class="mt-3 text-sm text-text-muted">Currently enrolled</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= PERFORMANCE CHARTS ================= -->
+  <section>
+    <div class="grid grid-cols-1 gap-6 xl:grid-cols-3">
+
+      <!-- MAIN PERFORMANCE CHART -->
+      <div class="relative overflow-hidden rounded-xl bg-white p-6 border border-gray-100 xl:col-span-2">
+        <div class="flex items-center justify-between">
+          <div>
+            <h3 class="text-base font-semibold text-text-primary">
+              Business Performance
+            </h3>
+            <p class="text-sm text-text-secondary">
+              Leads, conversions & revenue over time
+            </p>
+          </div>
+
+          <!-- Metric Toggle -->
+          <div class="flex items-center gap-1 rounded-lg bg-neutralbg p-1 text-sm">
+            <button class="px-3 py-1.5 rounded-md bg-white shadow-sm font-medium text-text-primary">
+              Leads
+            </button>
+            <button class="px-3 py-1.5 rounded-md text-text-secondary">
+              Revenue
+            </button>
+            <button class="px-3 py-1.5 rounded-md text-text-secondary">
+              Conversions
+            </button>
+          </div>
+        </div>
+
+        <!-- Chart Area -->
+        <div class="relative mt-6 h-64">
+          <div class="absolute inset-0 rounded-lg bg-gradient-to-t from-brand-50 to-transparent"></div>
+
+          <!-- Dummy Chart -->
+            <div class="absolute inset-0 flex items-end gap-2 px-4 pb-4">
+
+              <!-- Bar 1 -->
+              <div class="w-3 bg-brand-500 rounded-t-lg h-[40%]"></div>
+              <!-- Bar 2 -->
+              <div class="w-3 bg-brand-500/80 rounded-t-lg h-[60%]"></div>
+              <!-- Bar 3 -->
+              <div class="w-3 bg-brand-500/60 rounded-t-lg h-[50%]"></div>
+              <!-- Bar 4 -->
+              <div class="w-3 bg-brand-500/70 rounded-t-lg h-[80%]"></div>
+              <!-- Bar 5 -->
+              <div class="w-3 bg-brand-500/90 rounded-t-lg h-[65%]"></div>
+              <!-- Bar 6 -->
+              <div class="w-3 bg-brand-500/50 rounded-t-lg h-[55%]"></div>
+              <!-- Bar 7 -->
+              <div class="w-3 bg-brand-500/60 rounded-t-lg h-[75%]"></div>
+
+            </div>
+
+          <!-- Optional focus line -->
+          <div class="absolute left-1/2 top-0 h-full w-px bg-brand-100"></div>
+        </div>
+      </div>
+
+      <!-- INSIGHT PANEL -->
+      <div class="relative overflow-hidden rounded-xl bg-surface-subtle p-6 flex flex-col justify-between">
+        <div>
+          <h4 class="text-sm font-semibold text-text-primary">
+            This Period Insights
+          </h4>
+          <p class="mt-1 text-sm text-text-secondary">
+            Key highlights from selected range
+          </p>
+        </div>
+
+        <div class="mt-6 space-y-4">
+          <div class="flex items-start gap-3">
+            <span class="mt-1 h-2 w-2 rounded-full bg-brand-500"></span>
+            <p class="text-sm text-text-secondary">
+              Highest lead volume recorded on
+              <span class="font-medium text-text-primary">Tuesday</span>
+            </p>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <span class="mt-1 h-2 w-2 rounded-full bg-emerald-500"></span>
+            <p class="text-sm text-text-secondary">
+              Conversion rate improved by
+              <span class="font-medium text-text-primary">2.1%</span>
+            </p>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <span class="mt-1 h-2 w-2 rounded-full bg-indigo-400"></span>
+            <p class="text-sm text-text-secondary">
+              Revenue spike followed email campaign launch
+            </p>
+          </div>
+        </div>
+
+        <button class="mt-8 self-start text-sm font-medium text-brand-600 hover:underline">
+          View full analytics →
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+    </main>
+
+    </div>
+  </div>
   
-
-
   <script src="src/script.js"></script>
 </body>
 </html>
