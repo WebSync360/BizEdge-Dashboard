@@ -1,0 +1,95 @@
+<!-- ================= PERFORMANCE CHARTS ================= -->
+        <section>
+          <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
+
+            <!-- MAIN PERFORMANCE CHART -->
+            <div class="relative overflow-hidden rounded-xl bg-white p-6 border border-gray-100 xl:col-span-2">
+              <!-- Header + Metric Toggle -->
+              <div class="flex items-center justify-between">
+                <div>
+                  <h3 class="text-base font-semibold text-text-primary">
+                    Business Performance
+                  </h3>
+                  <p class="text-sm text-text-secondary">
+                    Leads, conversions & revenue over time
+                  </p>
+                </div>
+
+                <!-- Metric Toggle -->
+                <div class="flex items-center gap-2 rounded-lg bg-neutralbg p-1 text-sm overflow-x-auto">
+                  <button class="px-3 py-1.5 rounded-md bg-white shadow-sm font-medium text-text-primary">
+                    Leads
+                  </button>
+                  <button class="px-3 py-1.5 rounded-md text-text-secondary">
+                    Revenue
+                  </button>
+                  <button class="px-3 py-1.5 rounded-md text-text-secondary">
+                    Conversions
+                  </button>
+                </div>
+              </div>
+
+              <!-- Chart Area -->
+              <div class="relative mt-6 h-56 sm:h-64">
+                <!-- Gradient background -->
+                <div class="absolute inset-0 rounded-lg bg-gradient-to-t from-brand-50 to-transparent"></div>
+
+                <!-- Dummy Chart Bars -->
+                <div class="absolute inset-0 flex items-end gap-2 px-4 pb-4">
+                  <div class="w-3 bg-brand-500 rounded-t-lg h-[40%]"></div>
+                  <div class="w-3 bg-brand-500/80 rounded-t-lg h-[60%]"></div>
+                  <div class="w-3 bg-brand-500/60 rounded-t-lg h-[50%]"></div>
+                  <div class="w-3 bg-brand-500/70 rounded-t-lg h-[80%]"></div>
+                  <div class="w-3 bg-brand-500/90 rounded-t-lg h-[65%]"></div>
+                  <div class="w-3 bg-brand-500/50 rounded-t-lg h-[55%]"></div>
+                  <div class="w-3 bg-brand-500/60 rounded-t-lg h-[75%]"></div>
+                </div>
+
+                <!-- Optional vertical focus line (hide on small screens) -->
+                <div class="hidden sm:block absolute left-1/2 top-0 h-full w-px bg-brand-100"></div>
+              </div>
+            </div>
+
+            <!-- INSIGHT PANEL -->
+            <div class="relative overflow-hidden rounded-xl bg-surface-subtle p-6 flex flex-col justify-between">
+              <div>
+                <h4 class="text-sm font-semibold text-text-primary">
+                  This Period Insights
+                </h4>
+                <p class="mt-1 text-sm text-text-secondary">
+                  Key highlights from selected range
+                </p>
+              </div>
+
+              <div class="mt-6 space-y-4">
+                <div class="flex items-start gap-3">
+                  <span class="mt-1 h-3 w-3 rounded-full bg-brand-500"></span>
+                  <p class="text-sm text-text-secondary">
+                    Highest lead volume recorded on
+                    <span class="font-medium text-text-primary">Tuesday</span>
+                  </p>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <span class="mt-1 h-3 w-3 rounded-full bg-emerald-500"></span>
+                  <p class="text-sm text-text-secondary">
+                    Conversion rate improved by
+                    <span class="font-medium text-text-primary">2.1%</span>
+                  </p>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <span class="mt-1 h-3 w-3 rounded-full bg-indigo-400"></span>
+                  <p class="text-sm text-text-secondary">
+                    Revenue spike followed email campaign launch
+                  </p>
+                </div>
+              </div>
+
+              <button class="mt-8 self-start text-sm font-medium text-brand-600 hover:underline">
+                View full analytics →
+              </button>
+            </div>
+
+          </div>
+        </section>

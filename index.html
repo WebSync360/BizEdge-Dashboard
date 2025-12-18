@@ -42,14 +42,21 @@
 
 <div class="flex min-h-screen">
 
-      <!-- Hamburger Button -->
+<!-- Hamburger Button -->
 <!-- Mobile Topbar -->
 <header class="lg:hidden fixed top-0 left-0 right-0 z-40 h-14 bg-white border-b border-gray-200 flex items-center px-4">
-  <button id="sidebar-toggle" class="p-2 rounded-md hover:bg-gray-100">
-    <svg class="h-6 w-6 text-gray-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-    </svg>
-  </button>
+    <button id="sidebar-toggle" class="p-2 rounded-md hover:bg-gray-100">
+      <!-- Hamburger -->
+      <svg id="icon-open" class="h-6 w-6 text-gray-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+
+      <!-- Close -->
+      <svg id="icon-close" class="h-6 w-6 text-gray-800 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+
 
   <span class="ml-3 text-sm font-semibold text-gray-900">
     BE-BIZEDGE
@@ -221,7 +228,7 @@
           </div>
         </section>
       
-              <!-- ================= PERFORMANCE CHARTS ================= -->
+        <!-- ================= PERFORMANCE CHARTS ================= -->
         <section>
           <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
 
