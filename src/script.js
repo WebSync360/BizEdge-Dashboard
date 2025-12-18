@@ -1,6 +1,6 @@
-const sidebar = document.querySelector('aside');
-const btn = document.getElementById('mobile-menu-btn');
+const sidebar = document.getElementById('sidebar');
+    const btn = document.getElementById('mobile-menu-btn');
 
-btn.addEventListener('click', () => {
-  sidebar.classList.toggle('hidden');
-});
+    btn.addEventListener('click', () => {
+      sidebar.classList.toggle('hidden');
+    });
