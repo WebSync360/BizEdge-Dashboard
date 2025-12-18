@@ -47,7 +47,7 @@
   <aside id="sidebar" class="fixed inset-y-0 left-0 z-40 w-64 bg-white border-r border-gray-200 flex flex-col transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out">
     <!-- Logo -->
     <div class="h-18 flex items-center px-6 py-4 border-b border-gray-100">
-      <span class="text-lg font-semibold tracking-tight">CoachFlow</span>
+      <span class="text-lg font-semibold tracking-tight">BE-BIZEDGE</span>
     </div>
 
 <!-- Navigation -->
@@ -113,13 +113,15 @@
 
     <!-- User -->
     <div class="px-6 py-4 border-t border-gray-100">
-      <div class="flex items-center gap-3">
-        <div class="h-9 w-9 rounded-full bg-gray-200"></div>
-        <div>
-          <p class="text-sm font-medium">George Red</p>
-          <p class="text-xs text-gray-500">Business Coach</p>
-        </div>
+    <div class="flex items-center gap-3">
+      <div class="h-9 w-9 rounded-full overflow-hidden bg-gray-200">
+        <img src="https://avatars.mds.yandex.net/i?id=3428a0c5cde0c6bc9748398c1c7bbecbfe7f1ec1-9122788-images-thumbs&n=13" alt="User Avatar" class="h-full w-full object-cover">
       </div>
+      <div>
+        <p class="text-sm font-medium">George Red</p>
+        <p class="text-xs text-gray-500">Business Coach</p>
+      </div>
+    </div>
     </div>
   </aside>
 
@@ -160,7 +162,9 @@
                 </div>
               </div>
               <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-indigo-50 text-indigo-600">
-                <svg class="h-6 w-6"></svg>
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2h5m6-10a4 4 0 11-8 0 4 4 0 018 0z"/>
+              </svg>
               </div>
             </div>
           </div>
@@ -174,7 +178,9 @@
                 <p class="mt-3 text-sm text-indigo-600">+2.1% improvement</p>
               </div>
               <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-white text-indigo-600 shadow-sm">
-                <svg class="h-6 w-6"></svg>
+                  <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 3v18h18M9 17V9m4 8v-5m4 5v-9"/>
+                </svg>
               </div>
             </div>
           </div>
@@ -198,101 +204,101 @@
           </div>
         </section>
       
-      <!-- ================= PERFORMANCE CHARTS ================= -->
-      <section>
-      <div class="grid grid-cols-1 gap-6 xl:grid-cols-3">
+              <!-- ================= PERFORMANCE CHARTS ================= -->
+        <section>
+          <div class="grid grid-cols-1 gap-4 xl:grid-cols-3">
 
-        <!-- MAIN PERFORMANCE CHART -->
-        <div class="relative overflow-hidden rounded-xl bg-white p-6 border border-gray-100 xl:col-span-2">
-          <!-- Header + Metric Toggle -->
-          <div class="flex items-center justify-between">
-            <div>
-              <h3 class="text-base font-semibold text-text-primary">
-                Business Performance
-              </h3>
-              <p class="text-sm text-text-secondary">
-                Leads, conversions & revenue over time
-              </p>
+            <!-- MAIN PERFORMANCE CHART -->
+            <div class="relative overflow-hidden rounded-xl bg-white p-6 border border-gray-100 xl:col-span-2">
+              <!-- Header + Metric Toggle -->
+              <div class="flex items-center justify-between">
+                <div>
+                  <h3 class="text-base font-semibold text-text-primary">
+                    Business Performance
+                  </h3>
+                  <p class="text-sm text-text-secondary">
+                    Leads, conversions & revenue over time
+                  </p>
+                </div>
+
+                <!-- Metric Toggle -->
+                <div class="flex items-center gap-2 rounded-lg bg-neutralbg p-1 text-sm overflow-x-auto">
+                  <button class="px-3 py-1.5 rounded-md bg-white shadow-sm font-medium text-text-primary">
+                    Leads
+                  </button>
+                  <button class="px-3 py-1.5 rounded-md text-text-secondary">
+                    Revenue
+                  </button>
+                  <button class="px-3 py-1.5 rounded-md text-text-secondary">
+                    Conversions
+                  </button>
+                </div>
+              </div>
+
+              <!-- Chart Area -->
+              <div class="relative mt-6 h-64 sm:h-48">
+                <!-- Gradient background -->
+                <div class="absolute inset-0 rounded-lg bg-gradient-to-t from-brand-50 to-transparent"></div>
+
+                <!-- Dummy Chart Bars -->
+                <div class="absolute inset-0 flex items-end gap-2 px-4 pb-4">
+                  <div class="w-3 bg-brand-500 rounded-t-lg h-[40%]"></div>
+                  <div class="w-3 bg-brand-500/80 rounded-t-lg h-[60%]"></div>
+                  <div class="w-3 bg-brand-500/60 rounded-t-lg h-[50%]"></div>
+                  <div class="w-3 bg-brand-500/70 rounded-t-lg h-[80%]"></div>
+                  <div class="w-3 bg-brand-500/90 rounded-t-lg h-[65%]"></div>
+                  <div class="w-3 bg-brand-500/50 rounded-t-lg h-[55%]"></div>
+                  <div class="w-3 bg-brand-500/60 rounded-t-lg h-[75%]"></div>
+                </div>
+
+                <!-- Optional vertical focus line (hide on small screens) -->
+                <div class="hidden sm:block absolute left-1/2 top-0 h-full w-px bg-brand-100"></div>
+              </div>
             </div>
 
-            <!-- Metric Toggle -->
-            <div class="flex items-center gap-1 rounded-lg bg-neutralbg p-1 text-sm">
-              <button class="px-3 py-1.5 rounded-md bg-white shadow-sm font-medium text-text-primary">
-                Leads
+            <!-- INSIGHT PANEL -->
+            <div class="relative overflow-hidden rounded-xl bg-surface-subtle p-6 flex flex-col justify-between">
+              <div>
+                <h4 class="text-sm font-semibold text-text-primary">
+                  This Period Insights
+                </h4>
+                <p class="mt-1 text-sm text-text-secondary">
+                  Key highlights from selected range
+                </p>
+              </div>
+
+              <div class="mt-6 space-y-4">
+                <div class="flex items-start gap-3">
+                  <span class="mt-1 h-3 w-3 rounded-full bg-brand-500"></span>
+                  <p class="text-sm text-text-secondary">
+                    Highest lead volume recorded on
+                    <span class="font-medium text-text-primary">Tuesday</span>
+                  </p>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <span class="mt-1 h-3 w-3 rounded-full bg-emerald-500"></span>
+                  <p class="text-sm text-text-secondary">
+                    Conversion rate improved by
+                    <span class="font-medium text-text-primary">2.1%</span>
+                  </p>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <span class="mt-1 h-3 w-3 rounded-full bg-indigo-400"></span>
+                  <p class="text-sm text-text-secondary">
+                    Revenue spike followed email campaign launch
+                  </p>
+                </div>
+              </div>
+
+              <button class="mt-8 self-start text-sm font-medium text-brand-600 hover:underline">
+                View full analytics →
               </button>
-              <button class="px-3 py-1.5 rounded-md text-text-secondary">
-                Revenue
-              </button>
-              <button class="px-3 py-1.5 rounded-md text-text-secondary">
-                Conversions
-              </button>
             </div>
+
           </div>
-
-          <!-- Chart Area -->
-          <div class="relative mt-6 h-64">
-            <!-- Gradient background -->
-            <div class="absolute inset-0 rounded-lg bg-gradient-to-t from-brand-50 to-transparent"></div>
-
-            <!-- Dummy Chart Bars -->
-            <div class="absolute inset-0 flex items-end gap-2 px-4 pb-4">
-              <div class="w-3 bg-brand-500 rounded-t-lg h-[40%]"></div>
-              <div class="w-3 bg-brand-500/80 rounded-t-lg h-[60%]"></div>
-              <div class="w-3 bg-brand-500/60 rounded-t-lg h-[50%]"></div>
-              <div class="w-3 bg-brand-500/70 rounded-t-lg h-[80%]"></div>
-              <div class="w-3 bg-brand-500/90 rounded-t-lg h-[65%]"></div>
-              <div class="w-3 bg-brand-500/50 rounded-t-lg h-[55%]"></div>
-              <div class="w-3 bg-brand-500/60 rounded-t-lg h-[75%]"></div>
-            </div>
-
-            <!-- Optional vertical focus line -->
-            <div class="absolute left-1/2 top-0 h-full w-px bg-brand-100"></div>
-          </div>
-        </div>
-
-        <!-- INSIGHT PANEL -->
-        <div class="relative overflow-hidden rounded-xl bg-surface-subtle p-6 flex flex-col justify-between">
-          <div>
-            <h4 class="text-sm font-semibold text-text-primary">
-              This Period Insights
-            </h4>
-            <p class="mt-1 text-sm text-text-secondary">
-              Key highlights from selected range
-            </p>
-          </div>
-
-          <div class="mt-6 space-y-4">
-            <div class="flex items-start gap-3">
-              <span class="mt-1 h-2 w-2 rounded-full bg-brand-500"></span>
-              <p class="text-sm text-text-secondary">
-                Highest lead volume recorded on
-                <span class="font-medium text-text-primary">Tuesday</span>
-              </p>
-            </div>
-
-            <div class="flex items-start gap-3">
-              <span class="mt-1 h-2 w-2 rounded-full bg-emerald-500"></span>
-              <p class="text-sm text-text-secondary">
-                Conversion rate improved by
-                <span class="font-medium text-text-primary">2.1%</span>
-              </p>
-            </div>
-
-            <div class="flex items-start gap-3">
-              <span class="mt-1 h-2 w-2 rounded-full bg-indigo-400"></span>
-              <p class="text-sm text-text-secondary">
-                Revenue spike followed email campaign launch
-              </p>
-            </div>
-          </div>
-
-          <button class="mt-8 self-start text-sm font-medium text-brand-600 hover:underline">
-            View full analytics →
-          </button>
-        </div>
-
-      </div>
-    </section>
+        </section>
 
     <section>
       <div class="space-y-6">
@@ -417,9 +423,9 @@
           <ul class="space-y-4 max-h-64 overflow-y-auto">
             <li class="flex items-center justify-between">
               <div class="flex items-center gap-3">
-                <div class="h-10 w-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-semibold">JD</div>
+                <div class="h-10 w-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-semibold">RA</div>
                 <div>
-                  <p class="text-sm font-medium text-text-primary">John Doe signed up</p>
+                  <p class="text-sm font-medium text-text-primary">Raymond Ark signed up</p>
                   <p class="text-xs text-text-secondary">2 hours ago</p>
                 </div>
               </div>
