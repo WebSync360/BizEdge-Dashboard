@@ -42,49 +42,59 @@
 
 <body class="bg-gray-50 text-gray-900 antialiased">
   <div class="flex min-h-screen">
+    <!-- Sidebar Overlay (Mobile) -->
+    <div id="sidebar-overlay" class="fixed inset-0 bg-black/50 z-40 hidden lg:hidden"></div>
+
     <!-- Sidebar -->
-      <aside class="w-64 bg-white border-r border-gray-200 flex flex-col">
-    <!-- Logo -->
-    <div class="h-18 flex items-center px-6 border-b border-gray-100">
-      <span class="text-lg font-semibold tracking-tight">CoachFlow</span>
-    </div>
+    <aside id="sidebar" class="fixed inset-y-0 left-0 z-50 w-64 bg-white border-r border-gray-200 flex flex-col transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out">
+      <!-- Logo -->
+      <div class="h-18 flex items-center px-6 border-b border-gray-100">
+        <span class="text-lg font-semibold tracking-tight">CoachFlow</span>
+      </div>
 
-    <!-- Navigation -->
-    <nav class="flex-1 px-4 py-6 space-y-1">
-      <a href="#" class="flex items-center px-4 py-2 text-sm font-medium rounded-lg bg-indigo-50 text-indigo-600">
-        Overview
-      </a>
-      <a href="#" class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100">
-        Leads
-      </a>
-      <a href="#" class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100">
-        Conversions
-      </a>
-      <a href="#" class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100">
-        Messages
-      </a>
-      <a href="#" class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100">
-        Revenue
-      </a>
-      <a href="#" class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100">
-        Clients
-      </a>
-      <a href="#" class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100">
-        Analytics
-      </a>
-    </nav>
+      <!-- Navigation -->
+      <nav class="flex-1 px-4 py-6 space-y-1 overflow-y-auto">
+        <a href="#" class="flex items-center px-4 py-2 text-sm font-medium rounded-lg bg-indigo-50 text-indigo-600">
+          Overview
+        </a>
+        <a href="#" class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100">
+          Leads
+        </a>
+        <a href="#" class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100">
+          Conversions
+        </a>
+        <a href="#" class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100">
+          Messages
+        </a>
+        <a href="#" class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100">
+          Revenue
+        </a>
+        <a href="#" class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100">
+          Clients
+        </a>
+        <a href="#" class="flex items-center px-4 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-100">
+          Analytics
+        </a>
+      </nav>
 
-    <!-- User -->
-    <div class="px-6 py-4 border-t border-gray-100">
-      <div class="flex items-center gap-3">
-        <div class="h-9 w-9 rounded-full bg-gray-200"></div>
-        <div>
-          <p class="text-sm font-medium">George Red</p>
-          <p class="text-xs text-gray-500">Business Coach</p>
+      <!-- User -->
+      <div class="px-6 py-4 border-t border-gray-100">
+        <div class="flex items-center gap-3">
+          <div class="h-9 w-9 rounded-full bg-gray-200"></div>
+          <div>
+            <p class="text-sm font-medium">George Red</p>
+            <p class="text-xs text-gray-500">Business Coach</p>
+          </div>
         </div>
       </div>
-    </div>
-  </aside>
+    </aside>
+
+    <!-- Hamburger Button (Topbar) -->
+    <button id="sidebar-toggle" class="lg:hidden fixed top-4 left-4 z-50 p-2 rounded-md bg-white shadow-md">
+      <svg class="h-6 w-6 text-gray-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
 
     <!-- Main content -->
     <div class="flex-1 flex flex-col">
