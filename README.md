@@ -170,7 +170,7 @@ Dynamic data can replace:
 
 ---
 
-## 📄 LICENSE
+## LICENSE
 
 ```terminal
 MIT License
@@ -180,7 +180,7 @@ Attribution appreciated but not required.
 
 ---
 
-## 👤 AUTHOR
+## AUTHOR
 
 ```terminal
 WebSync360
