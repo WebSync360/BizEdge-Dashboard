@@ -41,13 +41,12 @@
 </head>
 
 <body class="bg-gray-50 text-gray-900 antialiased">
-with that behavior:
 
 <div class="flex min-h-screen">
   <!-- Sidebar -->
   <aside id="sidebar" class="fixed inset-y-0 left-0 z-40 w-64 bg-white border-r border-gray-200 flex flex-col transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out">
     <!-- Logo -->
-    <div class="h-18 flex items-center px-6 border-b border-gray-100">
+    <div class="h-18 flex items-center px-6 py-4 border-b border-gray-100">
       <span class="text-lg font-semibold tracking-tight">CoachFlow</span>
     </div>
 
@@ -127,7 +126,7 @@ with that behavior:
   <!-- Main content wrapper -->
   <div class="flex-1 flex flex-col lg:ml-64 transition-all duration-300 ease-in-out">
     <!-- Topbar -->
-    <header class="h-18 bg-white border-b border-gray-200 flex items-center justify-between px-8">
+    <header class="h-20 bg-white border-b border-gray-200 flex items-center justify-between px-8">
       <div>
         <h1 class="text-xl font-semibold tracking-tight">Dashboard Overview</h1>
         <p class="text-sm text-gray-500">Business performance snapshot</p>
@@ -518,6 +517,14 @@ with that behavior:
 
     </div>
   </div>
+
+    <!-- Hamburger Button -->
+  <button id="sidebar-toggle" class="lg:hidden fixed top-4 left-4 z-50 p-2 rounded-md bg-white shadow-md">
+    <svg class="h-6 w-6 text-gray-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+    </svg>
+  </button>
+</div>
   
   <script src="src/script.js"></script>
 </body>
